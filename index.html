@@ -3,25 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic of CSS</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Parallax</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "jost";
+      }
+
+      h2 {
+        font-size: 64px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 2px 2px 5px #000;
+      }
+      p {
+        font-size: 20px;
+        color: #fff;
+      }
+
+      section {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(./pexels-samandgos-709552.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: fixed;
+      }
+
+      .section-B {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(./antonino-visalli-RNiBLy7aHck-unsplash.jpg);
+      }
+
+      .section-C {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(./pexels-mike-468229-1181809.jpg);
+        background-attachment: fixed;
+      }
+      .section-D {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(./pexels-andreimike-1271619.jpg);
+      }
+    </style>
   </head>
   <body>
-    <h1>Best CSS Course Ever Created</h1>
-    <p class="para">
-      Discover a world of possibilities with our comprehensive Thapa Technical
-      CSS course. Dive into over 50 real-world interview questions to boost your
-      job prospects. Unlock the secrets of CSS with 30+ invaluable tips and
-      tricks. Engage in dynamic learning with our animated PowerPoint
-      presentations. Showcase your creativity with 10+ captivating animation
-      projects. Take on the ultimate challenge with a mega, fully multipage
-      responsive website project. Elevate your web presence with SEO insights
-      and website performance testing. Plus, get expert guidance on choosing
-      between free and paid hosting options. Our course is more than just CSS;
-      it's your gateway to mastering web development.
-    </p>
-    <!-- this is the comment part  -->
-    <br />
-    <a href="#" id="btn" target="_blank">Subscribe</a>
+    <section class="section-A">
+      <div>
+        <h2>Live</h2>
+        <p>Live with all your free will</p>
+      </div>
+    </section>
+    <section class="section-B">
+      <div>
+        <h2>Love</h2>
+        <p>Love the way you live</p>
+      </div>
+    </section>
+    <section class="section-C">
+      <div>
+        <h2>Explore</h2>
+        <p>Explore as much as you can</p>
+      </div>
+    </section>
+    <section class="section-D">
+      <div>
+        <h2>Travel</h2>
+        <p>Travel to different distination</p>
+      </div>
+    </section>
   </body>
 </html>
