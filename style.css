@@ -1,1 +1,58 @@
-/*  #ff3368; #ecfdff; */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "akshatFortune";
+  src: url("./font/Fortune.otf") format("OpenType");
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  display: grid;
+  place-items: center;
+}
+.hero-section {
+  width: 50%;
+}
+
+h1 {
+  font-family: "Urbanist", sans-serif;
+  font-family: "akshatFortune", "Urbanist", "sans-serif";
+  font-size: 54px;
+  font-weight: 900;
+  font-style: italic;
+  font-variant: small-caps;
+
+  /* textalingemenet */
+  text-align: center;
+  text-decoration-line: none;
+  text-decoration-color: wheat;
+  text-decoration-thickness: 2px;
+  text-decoration-style: inherit;
+  text-transform: initial;
+
+  letter-spacing: 17px;
+
+  text-shadow: 10px 12px 10px black;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 1.56;
+
+  text-shadow: 0px 0px 0px;
+}
+a {
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+}
